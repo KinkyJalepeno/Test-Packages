@@ -12,7 +12,7 @@ public class DigitTest {
     private void getNumber() {
 
         while(true) {
-            System.out.print("Enter number to be tested or type exit to quit: ");
+            System.out.print("Enter number to be tested or type exit: ");
             Scanner sc = new Scanner(System.in);
 
             String mobile = sc.nextLine();
@@ -58,6 +58,18 @@ public class DigitTest {
         checkLength.checkLength(newMobile);
     }
 
+    private void stripAndReplacePlus44(String intMobile){
+
+        System.out.println("Mobile starts with +44");
+        String newMobile = ("0") + intMobile.substring(3);
+
+        System.out.println("newMobile = " + newMobile);
+
+        DigitTest checkLength = new DigitTest();
+        checkLength.checkLength(newMobile);
+
+    }
+
     public void checkLength(String intMobile) {
         int length = String.valueOf(intMobile).length();
 
@@ -69,18 +81,6 @@ public class DigitTest {
         } else {
             System.out.println("Number: " + intMobile + " is sent to good file");
         }
-    }
-
-    private void stripAndReplacePlus44(String intMobile){
-
-        System.out.println("Mobile starts with +44");
-        String newMobile = ("0") + intMobile.substring(3);
-
-        System.out.println("newMobile = " + newMobile);
-
-        DigitTest checkLength = new DigitTest();
-        checkLength.checkLength(newMobile);
-
     }
 
 }
