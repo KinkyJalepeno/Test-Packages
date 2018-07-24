@@ -30,11 +30,11 @@ public class RegForm extends Application {
         maleRadio.setToggleGroup(genderGroup);
         femaleRadio.setToggleGroup(genderGroup);
 
-        Label technologies = new Label("Degree Gained");
+        Label technologies = new Label("Platforms Known");
         CheckBox java = new CheckBox("Java");
         CheckBox dotNet = new CheckBox(".Net");
 
-        Label educationLabel = new Label("Education History");
+        Label educationLabel = new Label("Degree Gained");
         ListView educationList = new ListView<>();
 
         educationList.getItems().add("Engineering");

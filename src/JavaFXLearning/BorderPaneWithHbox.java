@@ -8,7 +8,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
-public class BorderOaneWithHbox extends Application {
+public class BorderPaneWithHbox extends Application {
 
 
 
