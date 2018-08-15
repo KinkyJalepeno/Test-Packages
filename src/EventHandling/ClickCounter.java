@@ -21,12 +21,8 @@ public class ClickCounter extends Application {
 
         Button b1 = new Button("Click Me");
 
-        b1.setOnAction((event) -> {
+        b1.setOnAction((event) -> incrementCounter());
 
-            incrementCounter();
-
-        });
-        
         /*
         Old way of doing event handling
 
