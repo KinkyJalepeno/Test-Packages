@@ -1,0 +1,4 @@
+This text resides in example6 but will be copied to example7 (here).
+Just another line
+Yup, yu gussed it, another line
+Tell me you wuvs me !!

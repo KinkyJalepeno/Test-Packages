@@ -1,4 +1,4 @@
-package SocketStudy;
+package ThreadStudy;
 
 public class ExtendsThread extends Thread{
 
