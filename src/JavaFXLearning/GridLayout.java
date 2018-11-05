@@ -28,7 +28,7 @@ public class GridLayout extends Application {
         Button btn9 = new Button("Btn9");
 
         GridPane gridPane = new GridPane();
-        gridPane.setMinSize(400, 200);
+        gridPane.setMinSize(100, 100);
         gridPane.setPadding(new Insets(10));
         gridPane.setHgap(15);
         gridPane.setVgap(15);
@@ -46,8 +46,11 @@ public class GridLayout extends Application {
         gridPane.add(btn9, 2, 2);
 
         gridPane.setAlignment(Pos.CENTER);
+        gridPane.setGridLinesVisible(true);
 
-        Scene scene = new Scene(gridPane, 300, 300);
+
+
+        Scene scene = new Scene(gridPane, 200, 150);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
