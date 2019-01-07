@@ -1,0 +1,30 @@
+package AbstractClasses;
+
+public abstract class Vehicle {
+
+    private int id;
+
+    // just some standard setters and getters for ID
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+
+    // define some methods - this will force any child class to have them like an Interface
+
+    public abstract void startEngine();
+    public abstract void doSomething();
+    public abstract void shutDown();
+
+    public void run(){
+
+        startEngine();
+        doSomething();
+        shutDown();
+    }
+
+}
