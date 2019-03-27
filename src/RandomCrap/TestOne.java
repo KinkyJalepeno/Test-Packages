@@ -1,18 +1,29 @@
 package RandomCrap;
 
 
-import java.util.ArrayList;
-
 public class TestOne {
+
+    static Boolean scoopDown = false;
 
     public static void main(String[] args) {
 
-        ArrayList<String> animals = new ArrayList<>();
+        // print out current state of boolean
+        System.out.println(scoopDown);
 
-        animals.add("Dog");
-        animals.add("Cat");
-        animals.add("Rabbit");
+        // now flip the boolean
+        scoopDown = !scoopDown;
+        System.out.println(scoopDown);
 
-        System.out.println(animals.get(1));
+        // now flip it back
+        scoopDown = !scoopDown;
+        System.out.println(scoopDown);
+
+        if (!scoopDown) {
+
+            System.out.println("The Cargo Scoop is up");
+        } else {
+            System.out.println("the scoop is down");
+        }
+
     }
 }
