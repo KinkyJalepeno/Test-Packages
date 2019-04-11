@@ -12,7 +12,7 @@ public class MainClass {
     }
 
 
-    static int binarySearch(int[] list, int low, int high, int key) {
+    private static int binarySearch(int[] list, int low, int high, int key) {
 
         if (low == high) { // are the two indexes equal?
 
