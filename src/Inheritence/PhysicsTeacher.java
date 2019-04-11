@@ -15,10 +15,12 @@ public class PhysicsTeacher {
 
 
 class Teacher extends PhysicsTeacher{
+
     String designation = "Teacher";
     String collegeName = "Beginnersbook";
 
     void does(){
         System.out.println("Teaching");
     }
+
 }
