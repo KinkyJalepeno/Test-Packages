@@ -27,5 +27,13 @@ public class ClickMe1 extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
 
+        btn.setOnAction((event) -> buttonClicked());
+
+    }
+
+    private void buttonClicked() {
+
+        System.out.println("You clicked the button");
+
     }
 }

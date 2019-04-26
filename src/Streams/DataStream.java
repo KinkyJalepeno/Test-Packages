@@ -11,7 +11,7 @@ public class DataStream {
 
         File file = new File("example3.txt");
         if(file.exists()){
-            System.out.println("File already exiasts " + file.getName());
+            System.out.println("File already exists " + file.getName());
         }
         else{
             try {

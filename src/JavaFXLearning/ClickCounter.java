@@ -1,4 +1,4 @@
-package EventHandling;
+package JavaFXLearning;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
