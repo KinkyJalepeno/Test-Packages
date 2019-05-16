@@ -13,7 +13,12 @@ public class BufferedStream {
             BufferedReader reader = new BufferedReader(new FileReader("example6.txt"));
             BufferedWriter writer = new BufferedWriter(new FileWriter("example7.txt"));
 
-            String text = null;
+            /* using the above method of wrapping a file writer/reader directly into a buffered reader/writer
+            you are using by default the O/S default char encoding which might not be suitable.
+            To control what encoding is used we need to use input and output stream readers.
+            ie - BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("example6.txt"), "UTF-8"))) {..}
+            */
+            String text;
             while((text = reader.readLine()) != null){
 
                 System.out.println(text);

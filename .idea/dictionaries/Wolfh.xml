@@ -2,6 +2,7 @@
   <dictionary name="Wolfh">
     <words>
       <w>downcasting</w>
+      <w>serialisable</w>
       <w>upcasting</w>
     </words>
   </dictionary>
