@@ -20,9 +20,8 @@ public class Array {
 
     private int[] numbers(){
 
-        int[] values = {1, 3, 5, 7};
-
-        return values;
+        final int[] ints = {1, 3, 5, 7};
+        return ints;
     }
 
 

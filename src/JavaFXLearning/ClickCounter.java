@@ -1,16 +1,17 @@
 package JavaFXLearning;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class ClickCounter extends Application {
 
-    int count = 1;
+    private int count = 0;
+    private Label label = new Label("Count: " + count);
+
 
     public static void main(String[] args) {
         launch(args);
@@ -23,35 +24,20 @@ public class ClickCounter extends Application {
 
         b1.setOnAction((event) -> incrementCounter());
 
-        /*
-        Old way of doing event handling
-
-        b1.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-
-                System.out.println("count = " + count);
-                count ++;
-            }
-        });
-        */
-
         BorderPane bp = new BorderPane();
         bp.setCenter(b1);
+        bp.setBottom(label);
 
         Scene scene = new Scene(bp,300,300);
 
         primaryStage.setScene(scene);
         primaryStage.show();
-
-
-
     }
 
     private void incrementCounter() {
 
-        System.out.println("count = " + count);
         count++;
+        label.setText("Count:" + count);
 
     }
 }

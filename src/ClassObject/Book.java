@@ -1,6 +1,6 @@
 package ClassObject;
 
-public class DB {
+public class Book {
 
     String name;
     float price;

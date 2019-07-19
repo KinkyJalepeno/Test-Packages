@@ -7,12 +7,12 @@ public class BookDB {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        DB[] books = new DB[3];
+        Book[] bookList = new Book[3];
 
-        for (int i = 0; i < books.length; i++) {
+        for (int i = 0; i < bookList.length; i++) {
 
 
-            DB book = new DB();
+            Book book = new Book();
 
             System.out.print("Enter the books title: ");
             book.name = sc.nextLine();
@@ -35,28 +35,28 @@ public class BookDB {
             }
 
             sc.nextLine();
-            books[i] = book;
+            bookList[i] = book;
 
         }//end for loop
 
-        printStock(books);
+        printStock(bookList);
 
         sc.close();
     }//end main
 
-    public static void printStock(DB[] books) {
-        for (int i = 0; i < books.length; i++) {
-            printBook(books[i]);
+    private static void printStock(Book[] bookList) {
+        for (int i = 0; i < bookList.length; i++) {
+            printBook(bookList[i]);
         }
     }//end method printStock
 
-    public static void printBook(DB books) {
-        if (books.hardback == true) {
+    private static void printBook(Book book) {
+        if (book.hardback) {
             System.out.print("Hardback: ");
         } else {
             System.out.print("Paperback: ");
         }
-        System.out.println(books.name + " Price: " + books.price + " Stock: " + books.inv);
+        System.out.println(book.name + " Price: " + book.price + " Stock: " + book.inv);
 
     }//end method printBook
 }
