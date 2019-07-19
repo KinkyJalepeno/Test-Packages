@@ -22,6 +22,7 @@ public class ClickCounter extends Application {
 
         Button b1 = new Button("Click Me");
 
+        // This is where you detect a button press and call a method
         b1.setOnAction((event) -> incrementCounter());
 
         BorderPane bp = new BorderPane();
