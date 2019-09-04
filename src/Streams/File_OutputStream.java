@@ -2,7 +2,7 @@ package Streams;
 
 import java.io.FileOutputStream;
 
-public class OutputStream {
+public class File_OutputStream {
 
     public static void main(String[] args) {
 

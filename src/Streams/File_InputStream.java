@@ -2,7 +2,7 @@ package Streams;
 
 import java.io.*;
 
-public class InputStream {
+public class File_InputStream {
 
     public static void main(String[] args) {
 

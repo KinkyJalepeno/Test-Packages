@@ -27,8 +27,9 @@ public class UserTest {
 }
 
 /*
-User editor = new Editor();  // I am instantiating an object of the User class which does not contain an approveReview()
-method, so a method of that name cannot be called in the Editor class.  In order to do so I first need to define one
-in the User class as it is the "Super Class", this will make it inherited down the chain and able to be called.
+User editor = new Editor();  // I am creating an object of the Editor class, with the reference type of User.
+So, what is on the left is the reference type, while the right-side of assignment defines the actual type of object.
+Reference type simply dictates what methods we can access, but the object itself is still an Editor object.
+
 Alternatively we can use "explicit casting - ((Editor)editor).approveReview();
  */

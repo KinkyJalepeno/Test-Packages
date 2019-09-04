@@ -12,12 +12,12 @@ public class Main {
         // can call method in abstract class ok
         fordEscort.run();
 
-        // cab call abstract method on its own ok
+        // can call abstract method on its own ok
         fordEscort.startEngine();
 
 
-        MotorBike honhdaCR7 = new MotorBike();
-        honhdaCR7.run();
+        MotorBike hondaCR7 = new MotorBike();
+        hondaCR7.run();
 
     }
 

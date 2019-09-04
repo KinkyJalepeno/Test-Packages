@@ -5,11 +5,11 @@ public abstract class Vehicle {
     private int id;
 
     // just some standard setters and getters for ID
-    public int getId() {
+    int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    void setId(int id) {
         this.id = id;
     }
 
@@ -20,7 +20,7 @@ public abstract class Vehicle {
     public abstract void doSomething();
     public abstract void shutDown();
 
-    public void run(){
+    void run(){
 
         startEngine();
         doSomething();
